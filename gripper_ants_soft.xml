@@ -46,7 +46,7 @@
          </body>
 
         <!-- soft body -->
-        <flexcomp type="grid" count="4 4 3" spacing=".1 .1 .1" pos="0 0 0.3"
+        <flexcomp type="grid" count="3 3 3" spacing=".1 .1 .1" pos="0 0 0.1"
         radius=".01" rgba="0 0 1 1" name="softbody" dim="3" mass="0.6">
         <contact condim="3" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none"/>
         <edge damping="1"/>

@@ -45,30 +45,21 @@
              </body>
          </body>
 
-        <!-- soft body -->
-        <!-- <flexcomp type="grid" count="4 4 3" spacing=".1 .1 .1" pos="0 0 0.3"
-        radius=".01" rgba="0 0 1 1" name="softbody" dim="3" mass="0.6">
-        <contact condim="3" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none"/>
-        <edge damping="1"/>
-        <plugin plugin="mujoco.elasticity.solid">
-        <config key="poisson" value="0.4"/>
-      
-        <config key="young" value="4e2"/>
-        </plugin>
-        </flexcomp> -->
 
 
 
 
-	<body pos="0 0 0.3">
+            
+	        <body pos="0 0 0.3">
             <freejoint/>
             <composite type="cylinder" count="5 7 3" spacing="0.05">
                 <skin texcoord="true" material="green" rgba="0.7 0.7 0.7 1"/>
                 <geom type="capsule" size="0.015 0.05" rgba="0.8 0.2 0.1 1" mass="0.0001"
-                friction="1 0.05 0.01"/>
+                friction="0 0 0"/>
             </composite>
          </body> 
-    </worldbody>
+
+    </worldbody> 
 
     <equality>
         <joint name="left_box_right_box" joint1="left_finger" joint2="right_finger" polycoef="0 -1 0 0 0"/>
